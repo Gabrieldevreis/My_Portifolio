@@ -365,8 +365,8 @@ article .icon-check {
 .color-container {
     border-color: rgb(163, 163, 63);
     background: rgb(250, 250, 250);
-    min-width: 250px;
-    min-height: 300px;
+    max-width: 380px;
+    min-height: 350px;
 }
 
 .project-img {
