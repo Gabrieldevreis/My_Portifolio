@@ -335,13 +335,28 @@ section {
     flex-direction: row;
     gap: 1.5rem;
     justify-content: space-around;
-
 }
 
-article img {
-    max-width: 50px;
-    max-height: 50px;
+.skills .article {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: space-around;
+    height: 70vh;
+    align-items: center;
 }
+
+.tech-image {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.tech-image.active {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+  }
 
 article {
     display: flex;

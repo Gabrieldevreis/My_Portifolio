@@ -16,3 +16,23 @@ function copyText(){
     })
 }
 
+// SECTION SKILLS 
+
+const images = document.querySelectorAll('.tech-image');
+let currentIndex = 0;
+
+function highlightImage() {
+  images.forEach((img, index) => {
+    img.classList.remove('active');
+    if (index === currentIndex) {
+      img.classList.add('active');
+    }
+  });
+  currentIndex = (currentIndex + 1) % images.length; // Cicla para a próxima imagem
+}
+
+// Inicia a animação com intervalo de 2 segundos
+setInterval(highlightImage, 1500);
+
+// Chama imediatamente para destacar a primeira imagem
+highlightImage();
